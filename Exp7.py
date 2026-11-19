@@ -1,0 +1,9 @@
+# Write a Python program using regular expressions (regex) to find email patterns.
+import re
+text = "Contact us at abc@gmail.com, xyz@yahoo.com or test123@outlook.com"
+pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+emails = re.findall(pattern, text)
+
+print("Email addresses found:")
+for email in emails:
+    print(email)
